@@ -1,0 +1,135 @@
+@import "init.scss";
+@import "constants.scss";
+
+body{
+    background: antiquewhite;
+}
+
+.header{
+    width: 100%;
+    height: $navHeight;
+    background: #5e6472;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    user-select: none;
+
+    .container{
+        width: $pageWidth;
+        height: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        font-family: 微软雅黑;
+
+        .logo-box{
+            width: 140px;
+            height: 50px;
+            margin-top: 20px;
+            float: left;
+
+            a{
+               text-decoration: none;
+                width: 100%;
+                height: 100%;
+                color: black;
+            }
+        }
+
+        .nav{
+            margin-left: 128px;
+            float: left;
+
+            li{
+                float: left;
+                list-style: none;
+                line-height: $navHeight;
+                a{
+                    text-decoration: none;
+                    margin-right: $navHeight;
+                    color: white;
+                }
+            }
+        }
+
+        .auth-box{
+            float: right;
+            line-height: $navHeight;
+            color: white;
+
+            i{
+                font-size: 20px;
+                color: aquamarine;
+            }
+
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+
+        .user-more-box{
+                background: #fff;
+                width: 140px;
+                position: absolute;
+                box-shadow: 0 3px 4px #ccc;
+                border-radius: 5px;
+                top: 100%;
+                margin-left: -50px;
+                font-size: 14px;
+                z-index: 2;
+                float: right;
+                display: none;
+
+                .triangle{
+                    border: solid transparent;
+                    border-width: 10px;
+                    border-bottom-color: #fff;
+                    display: block;
+                    width: 0;
+                    height: 0;
+                    margin-top: -20px;
+                    margin-left: 60px;
+                }
+
+                a{
+                    text-align: center;
+                    height: 44px;
+                    color: #6d85ac!important;
+                    display: block;
+                    line-height: 44px;
+                }
+            }
+    }
+}
+.footer{
+    margin-top: 5px;
+    width: 100%;
+    height: $navHeight;
+    background: #5e6472;
+    overflow: hidden;
+    user-select: none;
+
+    .container{
+        width: $pageWidth;
+        height: 100%;
+        margin: 0 auto;
+
+        .logo-box{
+            width: 140px;
+            height: 50px;
+            margin-top: 20px;
+            float: left;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+        .contact-us{
+            height: 100%;
+            float: right;
+            margin-top: 20px;
+        }
+    }
+}

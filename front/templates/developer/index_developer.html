@@ -1,0 +1,29 @@
+{% extends 'front_base.html' %}
+
+{% block title %}
+    玄素
+{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/index_developer.min.css' %}">
+{% endblock %}
+
+{% block main %}
+    <div class="main">
+        <div class="wrapper">
+            <div class="menu-wrapper">
+                <ul class="list-tab">
+                    <li><a href="#">下载源码</a></li>
+                    <li><a href="#">更新日志</a></li>
+                    <li><a href="#">玄素API</a></li>
+                    <li><a href="#">算法介绍</a></li>
+                </ul>
+            </div>
+
+            <div class="detail-wrapper">
+                <div class="title"><p>TITLE</p></div>
+                <div class="context">article</div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

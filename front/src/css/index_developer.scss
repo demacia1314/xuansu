@@ -1,0 +1,48 @@
+@import "init.scss";
+@import "constants.scss";
+
+.main{
+  width: 100%;
+  margin-top: $navHeight+20px;
+  user-select: none;
+
+  .wrapper{
+    width: $pageWidth;
+    margin: 0 auto;
+    overflow: hidden;
+
+    .menu-wrapper{
+      float: left;
+      text-align: center;
+      width: 20%;
+      height: 1200px;
+      background:#373834 ;
+
+      ul{
+        li{
+          list-style: none;
+          margin-top: 20%;
+
+          a{
+            text-decoration: none;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+    .detail-wrapper{
+      width: 78%;
+      float: right;
+      height: 1200px;
+      background: #a4aca7;
+
+      .title{
+        background: #a4aca7;
+        text-align: center;
+        height: 20%;
+      }
+
+    }
+}

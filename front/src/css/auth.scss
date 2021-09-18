@@ -1,0 +1,158 @@
+@import "constants.scss";
+@import "init.scss";
+
+body{
+  background: pink;
+}
+
+.mask-wrapper{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.3);
+  opacity: 0;
+  user-select: none;
+  display: none;
+
+  .auth-wrapper{
+    width: $authWrapperWidth;
+    height: 500px;
+    background: white;
+    margin: 10% auto;
+    border-radius: $authWrapperBorderRadius;
+
+    .close-wrapper{
+      width: 100%;
+      height: 10%;
+      background: white;
+      overflow: hidden;
+      border-radius: $authWrapperBorderRadius;
+
+      .close-btn{
+        float: right;
+        margin-top: 10px;
+        margin-right: 10px;
+        i{
+          font-size: 30px;
+        }
+      }
+    }
+
+    .auth-inner-wrapper{
+      width: 100%;
+      height: 95%;
+      background: #5e6472;
+      position: relative;
+      overflow: hidden;
+      border-radius: 0 0 $authWrapperBorderRadius $authWrapperBorderRadius;
+
+      .scroll-wrapper{
+        width: $authWrapperWidth*2;
+        height: 100%;
+        position: absolute;
+        left: 0px;
+        top: 0;
+
+        .auth-group{
+          width: $authWrapperWidth;
+          height: 100%;
+          padding: 5%;
+          padding-top: 0;
+          box-sizing: border-box;
+          overflow: hidden;
+
+          .top-group{
+            height: 10%;
+            border-bottom: 3px solid #fad2e1;
+
+            .title{
+              float: left;
+            }
+
+            .switch{
+              float: right;
+              text-decoration: none;
+              color: #7bdff2;
+            }
+          }
+
+          .form-group{
+            margin-top: 10%;
+            .input-group{
+              text-align: center;
+
+              .form-control{
+                width: 80%;
+                border: 1px solid #ccc;
+                text-align: center;
+              }
+
+              .remember-label{
+                font-size: 12px;
+              }
+
+              .submit-btn{
+                width: 50%;
+                height: 40px;
+                background: #fad2e1;
+                outline: none;
+              }
+
+              .short-form-control{
+                width: 60%;
+                padding-bottom: 20px;
+                float: left;
+              }
+
+              .input-group-addon{
+                width: 30%;
+                height: 30px;
+                padding-bottom: 20px;
+                float: right;
+
+                .email-captcha-btn{
+                  width: 100%;
+                  height: 100%;
+                  border: 1px solid #fad2e1;
+                  font-size: 14px;
+                  line-height: 30px;
+                  display: inline-block;
+                  box-sizing: border-box;
+                }
+              }
+            }
+          }
+        }
+
+        .signin-group{
+          float:left;
+          background: white;
+
+          .input-group{
+            margin-bottom: 10%;
+
+            .form-control{
+              height: 40px;
+            }
+          }
+        }
+
+        .signup-group{
+          float: right;
+          background: white;
+
+          .input-group{
+            margin-bottom: 4%;
+
+            .form-control{
+              height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
